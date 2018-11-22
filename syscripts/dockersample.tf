@@ -1,5 +1,5 @@
 resource "docker_image" "ubuntu" {
-  name = "ubuntu:latest"
+  name = "nginx:latest"
 }
 resource "docker_container" "ubuntu_container" {
   image = "${docker_image.ubuntu.latest}"
